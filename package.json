@@ -11,9 +11,7 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "mermaid": "^11.6.0",
-    "vitepress": "1.6.3",
-    "vitepress-plugin-mermaid": "^2.0.17"
+    "vitepress": "1.6.3"
   },
   "description": "宽脉文档"
 }
