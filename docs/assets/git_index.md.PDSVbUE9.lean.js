@@ -1,1 +1,0 @@
-import{_ as i,c as a,o as l,ae as n}from"./chunks/framework.DQGCpV9i.js";const c=JSON.parse('{"title":"分支管理","description":"","frontmatter":{},"headers":[],"relativePath":"git/index.md","filePath":"git/index.md"}'),e={name:"git/index.md"};function t(h,s,p,d,k,o){return l(),a("div",null,s[0]||(s[0]=[n("",39)]))}const g=i(e,[["render",t]]);export{c as __pageData,g as default};
