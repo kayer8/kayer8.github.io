@@ -1,25 +1,24 @@
 ---
-# https://vitepress.dev/reference/default-theme-home-page
 layout: home
 
+title: km
+titleTemplate: 前端文档
+
 hero:
-  name: "My Awesome Project"
-  text: "A VitePress Site"
-  tagline: My great project tagline
-  actions:
-    - theme: brand
-      text: Markdown Examples
-      link: /markdown-examples
-    - theme: alt
-      text: API Examples
-      link: /api-examples
+  name: 宽脉文档
+  tagline: 宽脉前端文档，用于记录前端技术规范
 
 features:
-  - title: Feature A
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Feature B
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Feature C
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
+  - icon: 📦
+    title: 小程序
+    link: docs/code-docs/components/button
+    details: KM 前端文档
+  - icon: 💡
+    title: 规范
+    link: /docs/norm/
+    details: 规范
+  # - icon: ⚡️
+    # title: 发布器
+    # link: /publish/
+    # details: 宽脉文档
 ---
-
