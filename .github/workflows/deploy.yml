@@ -31,27 +31,32 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
         with:
-          fetch-depth: 0 # Not needed if lastUpdated is not enabled
-      # - uses: pnpm/action-setup@v3 # Uncomment this block if you're using pnpm
-      #   with:
-      #     version: 9 # Not needed if you've set "packageManager" in package.json
-      # - uses: oven-sh/setup-bun@v1 # Uncomment this if you're using Bun
+          fetch-depth: 0
+
+      # 1. 安装 Node.js
       - name: Setup Node
-        uses: pnpm/action-setup@v3
+        uses: actions/setup-node@v4
         with:
           node-version: 22
-          cache: pnpm # or pnpm / yarn
+          cache: pnpm
+
+      # 2. 安装指定版本的 pnpm
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v3
+        with:
+          version: 9  # 指定 pnpm 版本（如 8、9 等）
+
+      # 后续步骤保持不变
       - name: Setup Pages
         uses: actions/configure-pages@v4
       - name: Install dependencies
-        run: pnpm install # or pnpm install / yarn install / bun install
+        run: pnpm install
       - name: Build with VitePress
-        run: pnpm docs:build # or pnpm docs:build / yarn docs:build / bun run docs:build
+        run: pnpm docs:build
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
           path: docs/.vitepress/dist
-
   # Deployment job
   deploy:
     environment:
