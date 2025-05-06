@@ -55,6 +55,7 @@ export default defineConfig({
             text: '组件文档',
             items: [
               { text: 'Button 按钮', link: 'docs/code-docs/components/button' },
+              { text: 'FixedPageFooter 底部固定栏', link: 'docs/code-docs/components/fixed-page-footer' },
               { text: 'Input 输入框', link: 'docs/code-docs/components/input' },
               { text: 'Table 表格', link: 'docs/code-docs/components/table' }
             ]
