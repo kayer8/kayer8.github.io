@@ -1,17 +1,10 @@
 {
-  "name": "mk_document",
-  "version": "1.0.0",
-  "main": "index.js",
-  "scripts": {
-    "dev": "vitepress dev src",
-    "serve": "vitepress serve src",
-    "build": "vitepress build src",
-    "preview": "vitepress preview src"
-  },
-  "author": "",
-  "license": "ISC",
   "devDependencies": {
-    "vitepress": "1.6.3"
+    "vitepress": "^1.6.3"
   },
-  "description": "宽脉文档"
+  "scripts": {
+    "docs:dev": "vitepress dev",
+    "docs:build": "vitepress build",
+    "docs:preview": "vitepress preview"
+  }
 }
