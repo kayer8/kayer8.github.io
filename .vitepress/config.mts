@@ -17,12 +17,12 @@ export default defineConfig({
     }
   },
   themeConfig: {
-    // https://vitepress.dev/reference/default-theme-config
     sidebar: [
       {
         text: '指南',
         items: [
-          { text: '快速开始', link: 'docs/guide/getting-started' }
+          { text: '快速开始', link: 'docs/guide/getting-started' },
+          { text: '主题样式', link: 'https://semi.design/zh-CN/basic/tokens' },
         ]
       },
       {
@@ -63,9 +63,25 @@ export default defineConfig({
           {
             text: '工具类文档',
             items: [
-              { text: 'HTTP 请求', link: 'docs/code-docs/utils/http' },
-              { text: '工具函数', link: 'docs/code-docs/utils/helpers' },
-              { text: '自定义 Hooks', link: 'docs/code-docs/utils/hooks' }
+              { text: 'eventBus', link: 'docs/code-docs/utils/eventBus' },
+            ]
+          },
+          {
+            text: 'behavior文档',
+            items: [
+              { text: 'list', link: 'docs/code-docs/behavior/list' },
+            ]
+          },
+          {
+            text: 'scripts文档',
+            items: [
+              { text: 'scripts', link: 'docs/code-docs/scripts/index' },
+            ]
+          },
+          {
+            text: 'template文档',
+            items: [
+              { text: 'index', link: 'docs/code-docs/template/index' },
             ]
           }
         ]
@@ -73,7 +89,7 @@ export default defineConfig({
     ],
 
     socialLinks: [
-      { icon: 'github', link: 'docshttps://github.com/kayer8' }
+      { icon: 'github', link: 'https://github.com/kayer8/kayer8.github.io' }
     ]
   }
 })
